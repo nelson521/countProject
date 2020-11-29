@@ -9,13 +9,15 @@ let count = 0;
 addCount.addEventListener('click', add);
 
 function add() {
-  num.innerText = count++;
+  count += 1;
+  num.innerText = count;
   console.log(count);
 }
 
 lowerCount.addEventListener('click', minus);
 
 function minus() {
-  num.innerText = count--;
+  count -= 1;
+  num.innerText = count;
   console.log(count);
 }
