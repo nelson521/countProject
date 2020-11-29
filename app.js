@@ -2,8 +2,8 @@ const btn = document.querySelector('#click');
 
 const num = document.querySelector('#number');
 
-let count = 0;
+let count = 1;
 
 btn.addEventListener('click', function () {
-  console.log('clicked');
+  num.innerText = count++;
 });
